@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="day" translatesAutoresizingMaskIntoConstraints="NO" id="kkc-tQ-880">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iU3-0H-MhJ">
-                                <rect key="frame" x="343" y="397" width="82" height="60"/>
+                                <rect key="frame" x="166" y="353" width="82" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-81-bYw">
-                                <rect key="frame" x="41.5" y="497" width="685" height="31"/>
+                                <rect key="frame" x="79" y="433" width="256" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="681" id="Cko-2c-GAL"/>
                                     <constraint firstAttribute="width" constant="252" id="PKe-rg-3VK"/>
@@ -66,13 +66,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Mez-qd-bPO">
-                                <rect key="frame" x="211.5" y="200" width="345.5" height="63.5"/>
+                                <rect key="frame" x="34.5" y="134" width="345.5" height="63.5"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psn-5h-Yu4">
-                                <rect key="frame" x="333" y="567" width="102" height="60"/>
+                                <rect key="frame" x="156" y="483" width="102" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -254,7 +254,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="cenliusLabel" destination="iU3-0H-MhJ" id="uDa-5S-Y4w"/>
+                        <outlet property="celsiusLabel" destination="iU3-0H-MhJ" id="uDa-5S-Y4w"/>
                         <outlet property="fahrenheitLabel" destination="psn-5h-Yu4" id="tMU-nY-fEd"/>
                         <outlet property="slider" destination="B4Q-81-bYw" id="vIo-tQ-S0p"/>
                     </connections>
